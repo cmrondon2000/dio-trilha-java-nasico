@@ -1,0 +1,48 @@
+public class SmartTV {
+
+    boolean ligada = false;
+    int canal = 1;
+    int volume = 25;
+
+    public void ligar(){
+
+        ligada = true;
+    }
+
+    public void desligar(){
+
+        ligada =  false;
+    }
+
+    public void aumentarCanal(){
+
+        canal++;
+    }
+
+    public void diminuirCanal(){
+
+        canal--;
+    }
+
+    public void mudarCanal(int novocanal){
+
+        canal = novocanal;
+    }
+
+    public void aumentarVolume(){
+
+        volume ++;
+
+        System.out.println("Aumentado o volume para :" + volume);
+    }
+
+    public void diminuirVolume(){
+
+        volume --;
+
+        System.out.println("Diminuindo o volume para :" + volume);
+    }
+
+
+
+}
